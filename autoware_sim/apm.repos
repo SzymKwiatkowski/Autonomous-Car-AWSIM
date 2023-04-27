@@ -1,0 +1,49 @@
+repositories:
+  ppi/external/create_pkg:
+    type: git
+    url: https://github.com/amadeuszsz/create_pkg.git
+    version: humble
+  ppi/external/bluespace_ai_xsens_ros_mti_driver:
+    type: git
+    url: https://github.com/gmsanchez/bluespace_ai_xsens_ros_mti_driver.git
+    version: ros2_0_humble
+  ppi/external/ublox:
+    type: git
+    url: https://github.com/KumarRobotics/ublox.git
+    version: ros2
+  ppi/external/ros2_ouster:
+    type: git
+    url: https://github.com/ros-drivers/ros2_ouster_drivers.git
+    version: humble
+  ppi/external/micro_ros_setup:
+    type: git
+    url: https://github.com/micro-ROS/micro_ros_setup.git
+    version: humble
+  ppi/external/ntrip_client:
+    type: git
+    url: https://github.com/LORD-MicroStrain/ntrip_client.git
+    version: ros2
+  ppi/external/lidarslam_ros2:
+    type: git
+    url: https://github.com/rsasaki0109/lidarslam_ros2.git
+    version: humble
+  ppi/external/raw_joy_controller:
+    type: git
+    url: https://github.com/PPI-PUT/raw_joy_controller.git
+    version: master
+  sensor_kit/external/apm_sensor_kit_launch:
+    type: git
+    url: https://github.com/PPI-PUT/apm_sensor_kit_launch.git
+    version: main
+  vehicle/external/apm_vehicle_launch:
+    type: git
+    url: https://github.com/PPI-PUT/apm_vehicle_launch.git
+    version: main
+  vehicle/external/vehicle_ppi_interface:
+    type: git
+    url: https://github.com/PPI-PUT/vehicle_ppi_interface.git
+    version: master
+  launcher/external/autoware_ppi_launch:
+    type: git
+    url: https://github.com/PPI-PUT/autoware_ppi_launch.git
+    version: master

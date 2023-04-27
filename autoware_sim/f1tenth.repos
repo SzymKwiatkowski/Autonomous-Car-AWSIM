@@ -1,0 +1,21 @@
+repositories:
+  src/launcher/external/f1tenth_launch:
+    type: git
+    version: master
+    url: https://github.com/PPI-PUT/f1tenth_launch.git
+  src/vehicle/external/f1tenth_vehicle_launch:
+    type: git
+    version: main
+    url: https://github.com/PPI-PUT/f1tenth_vehicle_launch.git
+  src/sensor_kit/external/f1tenth_sensor_kit_launch:
+    type: git
+    version: main
+    url: https://github.com/PPI-PUT/f1tenth_sensor_kit_launch.git
+  src/universe/external/twist_to_odom:
+    type: git
+    version: master
+    url: https://github.com/PPI-PUT/twist_to_odom.git
+  src/universe/external/slam_toolbox:
+    type: git
+    version: ros2
+    url: https://github.com/SteveMacenski/slam_toolbox.git

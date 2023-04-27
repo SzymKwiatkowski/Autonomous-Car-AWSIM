@@ -1,0 +1,5 @@
+repositories:
+  src/ppi/external/create_pkg:
+    type: git
+    url: https://github.com/amadeuszsz/create_pkg.git
+    version: humble
