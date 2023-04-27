@@ -18,3 +18,10 @@ Uncontrollable:
 ```bash
 cd ./autoware_sim/F1Tenth_v0.4_keyboard_control && ./F1Tenth_v0.4.x86_64
 ```
+
+Then to use docker:
+```bash
+docker pull ghcr.io/autowarefoundation/autoware-universe:latest-cuda
+```
+
+and then launch it with run and enter scripts in root to use.

@@ -2,7 +2,7 @@ FROM ghcr.io/autowarefoundation/autoware-universe:latest-cuda
 RUN echo "Europe/Utc" > /etc/timezone
 # RUN ln -fs /usr/share/zoneinfo/Europe/Rome /etc/localtime
 
-ARG USERNAME=user
+ARG USERNAME=USERNAME
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -40,7 +40,7 @@ RUN apt-get update -q && \
 RUN apt-get update -q && \
         export DEBIAN_FRONTEND=noninteractive && \
     apt-get -y --no-install-recommends install libgl1-mesa-glx libgl1-mesa-dri && \
-    apt-get install mesa-utils && \
+    apt-get install -y mesa-utils && \
     rm -rf /var/lib/apt/lists/*
 RUN sed -i 's/--no-generate//g' /usr/share/bash-completion/completions/apt-get && \
     sed -i 's/--no-generate//g' /usr/share/bash-completion/completions/apt-cache
@@ -52,7 +52,7 @@ RUN echo 'if [ -f /etc/bash_completion ] && ! shopt -oq posix; then \n\
     . /etc/bash_completion \n\
 fi \n\
 \n\
-export USER=root \n\
+export USER=root \n \
 source /opt/ros/$ROS_DISTRO/setup.bash' >> /root/.bashrc
 
 RUN touch /root/.Xauthority

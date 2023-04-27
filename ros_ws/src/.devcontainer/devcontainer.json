@@ -1,11 +1,11 @@
 {
     "name": "ROS 2 Development Container",
     "privileged": true,
-    "remoteUser": "user",
+    "remoteUser": "USERNAME",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "USERNAME": "user"
+            "USERNAME": "USERNAME"
         }
     },
     "workspaceFolder": "/home/ws",
@@ -32,11 +32,14 @@
         "-e", "DISPLAY=${env:DISPLAY}"
     ],
     "mounts": [
-       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
-        "source=${localWorkspaceFolder}/../cache/build,target=/home/ws/build,type=bind",
-        "source=${localWorkspaceFolder}/../cache/install,target=/home/ws/install,type=bind",
-        "source=${localWorkspaceFolder}/../cache/log,target=/home/ws/log,type=bind"
-    ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R USERNAME /home/ws/"
+        "source=${localWorkspaceFolder}/../build,target=/home/ws/build,type=bind",
+        "source=${localWorkspaceFolder}/../install,target=/home/ws/install,type=bind",
+        "source=${localWorkspaceFolder}/../log,target=/home/ws/log,type=bind",
+        "source=${localWorkspaceFolder}/../../autoware_sim,target=/home/autoware,type=bind",
+        "source=${localWorkspaceFolder}/../../autoware_map,target=/home/autoware_map,type=bind",
+        "source=${localWorkspaceFolder}/../.vscode,target=/home/ws/.vscode,type=bind"
+        ],
+    "postCreateCommand": "sudo chown -R USERNAME /home/ws/"
 }
