@@ -27,6 +27,7 @@ rviz2
 ```
 
 # Usefull information
+- If lines 33 and 34 are uncommented nvidia gpu can be used via nvidia-container-toolkit
 - To start container go to `src` directory and launch `Visual Studio Code` in there. Afterwards use `Dev Containers: Rebuild and Reopen in Container`
 - If build is failing check `devcontainer.json` and `Dockerfile` contents, especially usage of USERNAME variables. If something else is failing check build log
 - If ros build is failing or some packages cannot be detected you can update ROS packages via using command:
