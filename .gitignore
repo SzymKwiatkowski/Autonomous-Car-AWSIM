@@ -8,5 +8,7 @@ ros_ws/src/universe/
 ros_ws/src/vehicle/
 ros_ws/src/sensor_component/
 ros_ws/src/sensor_kit/
+ros_ws/src/param/
+ros_ws/src/core/
 ros_ws/src/.devcontainer/Dockerfile
 ros_ws/src/.devcontainer/devcontainer.json
