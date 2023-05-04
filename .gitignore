@@ -3,3 +3,10 @@ ros_ws/install/
 ros_ws/log/
 autoware_sim/magic_enum-0.8.2/build/
 ros_ws/src/octomap_mapping/
+ros_ws/src/launcher/autoware_launch/
+ros_ws/src/universe/
+ros_ws/src/vehicle/
+ros_ws/src/sensor_component/
+ros_ws/src/sensor_kit/
+ros_ws/src/.devcontainer/Dockerfile
+ros_ws/src/.devcontainer/devcontainer.json
