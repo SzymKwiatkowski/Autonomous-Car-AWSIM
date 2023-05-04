@@ -1,0 +1,4 @@
+ros_ws/build/
+ros_ws/install/
+ros_ws/log/
+autoware_sim/magic_enum-0.8.2/build/
