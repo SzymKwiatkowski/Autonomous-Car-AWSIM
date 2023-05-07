@@ -12,3 +12,5 @@ ros_ws/src/param/
 ros_ws/src/core/
 ros_ws/src/.devcontainer/Dockerfile
 ros_ws/src/.devcontainer/devcontainer.json
+
+**/__pycache__/
