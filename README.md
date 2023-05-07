@@ -64,3 +64,21 @@ To run:
 ```bash
 bash /home/ws/f1_launch.sh
 ```
+
+If problem with map frame is encountered go to f1tenth_localication.launch.py and uncomment map to odom publisher so it looks like that:
+```python
+map_to_odom_tf_publisher = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        name="static_map_to_odom_tf_publisher",
+        output="screen",
+        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "map", "odom"],
+    )
+
+    return [
+        gyro_odometer_launch,
+        twist_to_odom_node,
+        nav2_localization,
+        map_to_odom_tf_publisher
+    ]
+```
