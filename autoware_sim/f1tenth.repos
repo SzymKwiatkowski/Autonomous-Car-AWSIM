@@ -2,7 +2,7 @@ repositories:
   src/launcher/external/f1tenth_launch:
     type: git
     version: master
-    url: https://github.com/PPI-PUT/f1tenth_launch.git
+    url: https://github.com/SzymKwiatkowski/f1tenth_launch.git
   src/vehicle/external/f1tenth_vehicle_launch:
     type: git
     version: main
