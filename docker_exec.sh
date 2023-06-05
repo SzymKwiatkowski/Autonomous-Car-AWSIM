@@ -41,7 +41,7 @@ docker run -it \
 	--env="NVIDIA_VISIBLE_DEVICES=all" \
 	--env="NVIDIA_DRIVER_CAPABILITIES=all" \
         --network=host \
-	vsc-src-860d21e7015951ac09c8d99e51bcb71ae87923523e57036951a85a03433e3b52-uid \
+	autoware_base \
 	bash
 
 
