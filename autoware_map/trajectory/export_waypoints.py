@@ -4,7 +4,7 @@ from rosbags.serde import deserialize_cdr
 import json
 
 # create reader instance and open for reading
-with Reader('./states') as reader:
+with Reader('./lots_waypoints') as reader:
     # topic and msgtype information is available on .connections list
     for connection in reader.connections:
         print(connection.topic, connection.msgtype)

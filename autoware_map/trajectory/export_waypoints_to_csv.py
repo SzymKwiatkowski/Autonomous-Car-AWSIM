@@ -4,7 +4,7 @@ from rosbags.serde import deserialize_cdr
 import pandas as pd
 
 # create reader instance and open for reading
-with Reader('./poses_and_control') as reader:
+with Reader('./lots_waypoints') as reader:
     # topic and msgtype information is available on .connections list
     for connection in reader.connections:
         print(connection.topic, connection.msgtype)
@@ -30,9 +30,9 @@ df_waypoints = pd.DataFrame(x_y_waypoints)
 df_waypoints.columns = ['pose.x', 'pose.y']
 df_waypoints.to_csv('waypoints.csv', index=False)
 
-df_states = pd.DataFrame(states)
-df_states.columns = ['pose.x', 'pose.y', 'pose.z', 'orientation.x', 'orientation.y', 'orientation.z', 'orientation.w']
-df_states.to_csv('states.csv', index=False)
+# df_states = pd.DataFrame(states)
+# df_states.columns = ['pose.x', 'pose.y', 'pose.z', 'orientation.x', 'orientation.y', 'orientation.z', 'orientation.w']
+# df_states.to_csv('states.csv', index=False)
 
-df_controls = pd.DataFrame(controls)
-df_controls.to_csv('controls.csv', index=False)
+# df_controls = pd.DataFrame(controls)
+# df_controls.to_csv('controls.csv', index=False)
